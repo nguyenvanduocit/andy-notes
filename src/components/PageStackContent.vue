@@ -1,14 +1,15 @@
 <template>
   <div :class="$style.container" ref="contentEl">
     <Markdown :source="content" class="content"></Markdown>
+    <div v-html="content"></div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import StackableLink from "./StackableLink.vue";
 import {defineProps, onMounted, onUnmounted, ref} from 'vue'
-import Markdown from "vue3-markdown-it"
 import {useStackStore} from "../hooks/stackablePage";
+import {useMarkdown} from "../hooks/useMarkdown";
 
 const props = defineProps({
   stackIndex: {
@@ -25,7 +26,7 @@ const props = defineProps({
 
 const content = ref("")
 import("../assets/" + props.pageId + "?raw").then(md => {
-  content.value = md.default
+  content.value = useMarkdown(md.default)
 })
 
 const contentEl = ref<HTMLElement | undefined>(undefined)
@@ -62,16 +63,16 @@ onUnmounted(() => {
   font-size: 17px;
   line-height: 24px;
   max-width 100%
-  :global(p)
-    margin-top: 0;
-    margin-bottom: 1em;
-.title
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: 0.011%;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
-  color: inherit;
-
+  :global
+    p
+      margin-top: 0;
+      margin-bottom: 1em;
+    h1
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: 0.011%;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: inherit;
 </style>

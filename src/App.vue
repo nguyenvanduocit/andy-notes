@@ -3,7 +3,6 @@ import AppHeader from "./components/AppHeader.vue";
 import PageStack from "./components/PageStack.vue";
 import PageStackItem from "./components/PageStackItem.vue";
 import {useStackStore} from "./hooks/stackablePage";
-import {onMounted, onUnmounted} from "vue";
 
 const pageStack = useStackStore();
 
