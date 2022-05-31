@@ -1,0 +1,27 @@
+<script setup lang="ts">
+import AppHeader from "./components/AppHeader.vue";
+import PageStack from "./components/PageStack.vue";
+import PageStackItem from "./components/PageStackItem.vue";
+import {useStackStore} from "./hooks/stackablePage";
+import {onMounted, onUnmounted} from "vue";
+
+const pageStack = useStackStore();
+
+
+</script>
+
+<template>
+  <div :class="$style.container">
+    <AppHeader/>
+    <PageStack>
+      <PageStackItem v-for="(pageId, index) in pageStack.pageStack" :key="pageId" :stack-index="index" :page-id="pageId"/>
+    </PageStack>
+  </div>
+</template>
+
+<style lang="stylus" module>
+.container
+  height 100vh
+  display flex
+  flex-direction column
+</style>
