@@ -1,5 +1,11 @@
-Đây là những trang note nhỏ của Andy. Hãy cùng mình tìm hiểu về một số kiến thức:
+Đây là những trang note nhỏ của Andy. Hãy cùng mình tìm hiểu về một số kiến thức như sau đây
 
-## Ghi chú
+## Lập trình
 
-Theo mình thì [Mỗi leeting note phải thực sự nhỏ](a.md) và phải [có tính liên kết](b.md). Tuy nhiên đa phần chúng ta [viết note chưa thực sự hiệu quả](chung-ta-viet-note-chua-hieu-qua.md). Vậy thì hãy xem qua cách [viết note như thế nào cho hiệu quả](c.md) nhé
+[Custom domain cho go mod giúp migrate code đơn giản hơn](/Evergreen/custom-domain-cho-go-mod.md)
+
+[Expose mạng local sử dụng FRP](/Evergreen/cai-dat-frp.md)
+
+[Cách implement microfrontend](/Evergreen/cach-implement-microfrontend.md)
+
+[Tại sao chọn TrueProfit](/Evergreen/tai-sao-chon-trueprofit.md)

@@ -1,0 +1,1 @@
+Cũng giống như microservice, microfrontend là cách để implement frontend mà ta chia frontend ra thành nhiều phần độc lập với nhau.

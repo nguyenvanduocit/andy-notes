@@ -35,7 +35,11 @@ const onElementClicked = (e: Event) => {
   if (e.target?.tagName !== "A"){
     return
   }
-  const pageId = (e.target as HTMLAnchorElement).pathname
+  const pageId = (e.target as HTMLAnchorElement).href.replace(document.location.host, "").replace(document.location.protocol, "").replace("//", "")
+  if (!pageId.endsWith(".md")){
+    return
+  }
+
   pageStack.navigate(props.stackIndex, pageId)
   e.preventDefault()
 }

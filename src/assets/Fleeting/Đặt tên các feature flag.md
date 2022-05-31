@@ -1,0 +1,1 @@
+All our Feature Flags’ names are combined with `featureName` + `Enabled` to make sure that when one is on, it’s enabled. In our previous example — `RemovedManualOnboardingEnabled` — it’s easy to understand what happens when this Feature Flag is ON.

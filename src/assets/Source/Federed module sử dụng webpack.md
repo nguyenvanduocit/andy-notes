@@ -1,0 +1,1 @@
+Sử dụng webpack để build federed module
