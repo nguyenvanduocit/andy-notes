@@ -5,6 +5,7 @@ export const useStackStore = defineStore('stack', () =>{
   const pageStack = ref<string[]>([
     '/index.md'
   ])
+
   function navigate(index: number, a: string) {
     if (index < pageStack.value.length - 1) {
       pageStack.value.splice(index + 1)

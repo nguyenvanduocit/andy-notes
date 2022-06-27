@@ -4,8 +4,7 @@ import PageStack from "./components/PageStack.vue";
 import PageStackItem from "./components/PageStackItem.vue";
 import {useStackStore} from "./hooks/stackablePage";
 
-const pageStack = useStackStore();
-
+const { pageStack: pages } = useStackStore();
 
 </script>
 
@@ -13,7 +12,7 @@ const pageStack = useStackStore();
   <div :class="$style.container">
     <AppHeader/>
     <PageStack>
-      <PageStackItem v-for="(pageId, index) in pageStack.pageStack" :key="pageId" :stack-index="index" :page-id="pageId"/>
+      <PageStackItem v-for="(pageId, index) in pages" :key="pageId" :stack-index="index" :page-id="pageId"/>
     </PageStack>
   </div>
 </template>

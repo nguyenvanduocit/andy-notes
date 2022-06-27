@@ -1,4 +1,9 @@
+## Config golanglint-ci
+
+^47e735
+
 Config file:
+
 ```yaml
 run:  
   timeout: 10m  
@@ -53,4 +58,4 @@ GOFLAGS='' golangci-lint run --new-from-rev=HEAD^1
 
 ## Related
 
-1. [[Check commit bằng husky]]
+1. [[../Source/Check commit bằng husky]]

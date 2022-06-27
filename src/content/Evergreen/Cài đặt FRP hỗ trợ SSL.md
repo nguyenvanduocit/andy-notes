@@ -14,9 +14,7 @@ Tạo 2 record như sau, với value là IP của server mà bạn muốn dùng 
 2. `*.frp.duocnguyen.dev.`
 
 ## 2. Cài đặt server
-
 ![[Cài đặt FRP#Cài đặt FRPS]]
-
 ### Cài nginx
 
 ![[Cài đặt nginx#^bc4a00]]
@@ -24,7 +22,6 @@ Tạo 2 record như sau, với value là IP của server mà bạn muốn dùng 
 ![[Cài ssl cho nginx]]
 
 # Cài đặt client
-
 ![[Cài đặt FRP#Cài đặt FRPC]]
 
 # Sử dụng

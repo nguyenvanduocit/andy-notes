@@ -1,4 +1,4 @@
-[Microfrontend là gì?](/Source/microfrontend-la-gi.md)
+![Microfrontend là gì?](../Source/Microfrontend%20là%20gì?.md)
 
 # Các giải pháp cho microfrontend
 
@@ -9,10 +9,8 @@ Cũng từ định nghĩa đơn giản đó, ta có thể có nhiều cách đ�
 3. Federated Module
 4. Web component
 
-![[Microfrontend sử dụng iframe]]
 
-![[Microfrontend sử dụng package]]
-
-![[Microfrontend sử dụng Federed Module]]
-
-![[Microfrontend sử dụng web component]]
+![[Source/Microfrontend sử dụng iframe]]
+![[Source/Microfrontend sử dụng package]]
+![[Source/Microfrontend sử dụng Federed Module]]
+![[Source/Microfrontend sử dụng web component]]

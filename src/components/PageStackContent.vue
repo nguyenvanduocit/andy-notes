@@ -1,47 +1,43 @@
 <template>
   <div :class="$style.container" ref="contentEl">
-    <Markdown :source="content" class="content"></Markdown>
-    <div v-html="content"></div>
+    <component :is="contentComponent"/>
   </div>
 </template>
 
 <script lang="ts" setup>
-import StackableLink from "./StackableLink.vue";
-import {defineProps, onMounted, onUnmounted, ref} from 'vue'
+import { shallowRef, onMounted, onUnmounted, ref, inject} from 'vue'
 import {useStackStore} from "../hooks/stackablePage";
-import {useMarkdown} from "../hooks/useMarkdown";
 
 const props = defineProps({
-  stackIndex: {
-    default: () => {
-      return 0
-    }
-  },
   pageId: {
-    default: () => {
-      return "a.md"
-    }
+    required: true
   }
 })
 
-const content = ref("")
-import("../assets/" + props.pageId + "?raw").then(md => {
-  content.value = useMarkdown(md.default)
+// inject stackIndex to the content component
+const stackIndex = inject<number>("stackIndex")
+
+const contentComponent = shallowRef()
+
+import("../content/" + props.pageId).then(md => {
+  contentComponent.value = md.default
 })
 
 const contentEl = ref<HTMLElement | undefined>(undefined)
 const pageStack = useStackStore();
 
 const onElementClicked = (e: Event) => {
-  if (e.target?.tagName !== "A"){
+  const element = e.target! as HTMLAnchorElement
+  if (element?.tagName !== "A"){
     return
   }
-  const pageId = (e.target as HTMLAnchorElement).href.replace(document.location.host, "").replace(document.location.protocol, "").replace("//", "")
+
+  const pageId = element.href.replace(document.location.host, "").replace(document.location.protocol, "").replace("//", "")
   if (!pageId.endsWith(".md")){
     return
   }
 
-  pageStack.navigate(props.stackIndex, pageId)
+  pageStack.navigate(stackIndex ?? 0, decodeURIComponent(pageId))
   e.preventDefault()
 }
 
@@ -53,12 +49,10 @@ onUnmounted(() => {
   contentEl.value?.removeEventListener("click", onElementClicked);
 });
 
-
 </script>
 
 <style lang="stylus" module>
 .container
-  padding: 32px
   color: #333;
   font-size: 17px;
   line-height: 24px;
