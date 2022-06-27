@@ -1,4 +1,4 @@
-![Microfrontend là gì?](../Source/Microfrontend%20là%20gì?.md)
+![[Source/Microfrontend là gì]]
 
 # Các giải pháp cho microfrontend
 

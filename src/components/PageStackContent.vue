@@ -19,7 +19,7 @@ const stackIndex = inject<number>("stackIndex")
 
 const contentComponent = shallowRef()
 
-import("../content/" + props.pageId).then(md => {
+import("../assets/content/" + props.pageId + '.md').then(md => {
   contentComponent.value = md.default
 })
 
@@ -61,7 +61,7 @@ onUnmounted(() => {
     p
       margin-top: 0;
       margin-bottom: 1em;
-    h1
+    h2, h1
       font-size: 28px;
       line-height: 40px;
       letter-spacing: 0.011%;
@@ -69,4 +69,7 @@ onUnmounted(() => {
       margin-top: 0;
       margin-bottom: 16px;
       color: inherit;
+    h2
+      font-size: 20px;
+      line-height: 30px;
 </style>

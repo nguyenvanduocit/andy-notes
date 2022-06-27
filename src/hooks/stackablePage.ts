@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useStackStore = defineStore('stack', () =>{
   const pageStack = ref<string[]>([
-    '/index.md'
+    '/index'
   ])
 
   function navigate(index: number, a: string) {

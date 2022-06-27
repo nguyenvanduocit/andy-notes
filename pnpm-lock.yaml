@@ -1,50 +1,93 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@gardeners/markdown-it-wikilinks': ^1.5.1
-  '@kwvanderlinde/markdown-it-wikilinks': ^1.0.2
-  '@types/markdown-it': ^12.2.3
-  '@vitejs/plugin-vue': ^2.3.3
-  eslint: ^8.18.0
-  eslint-plugin-simple-import-sort: ^7.0.0
-  happy-dom: ^5.3.1
-  markdown-it: ^13.0.1
-  markdown-it-videojs: ^0.0.1
-  markdown-it-wikilinks: ^1.2.0
-  modern-normalize: ^1.1.0
-  pinia: ^2.0.14
-  prismjs: ^1.28.0
-  stylus: ^0.58.1
-  typescript: ^4.7.4
-  vite: ^2.9.13
-  vite-plugin-md: 0.18.1
-  vue: ^3.2.37
-  vue-tsc: ^0.34.17
-  vue3-markdown-it: ^1.0.10
+importers:
 
-dependencies:
-  '@gardeners/markdown-it-wikilinks': 1.5.1
-  '@kwvanderlinde/markdown-it-wikilinks': 1.0.2
-  '@types/markdown-it': 12.2.3
-  eslint: 8.18.0
-  eslint-plugin-simple-import-sort: 7.0.0_eslint@8.18.0
-  happy-dom: 5.3.2
-  markdown-it: 13.0.1
-  markdown-it-videojs: 0.0.1
-  markdown-it-wikilinks: 1.2.0
-  modern-normalize: 1.1.0
-  pinia: 2.0.14_j6bzmzd4ujpabbp5objtwxyjp4
-  prismjs: 1.28.0
-  stylus: 0.58.1
-  vite-plugin-md: 0.18.1_2tmmwgxweliz55r4uud2t4r4o4
-  vue: 3.2.37
-  vue3-markdown-it: 1.0.10_@types+markdown-it@12.2.3
+  .:
+    specifiers:
+      '@gardeners/markdown-it-wikilinks': ^1.5.1
+      '@kwvanderlinde/markdown-it-wikilinks': ^1.0.2
+      '@types/markdown-it': ^12.2.3
+      '@vitejs/plugin-vue': ^2.3.3
+      eslint: ^8.18.0
+      eslint-plugin-simple-import-sort: ^7.0.0
+      happy-dom: ^5.3.1
+      markdown-it: ^13.0.1
+      markdown-it-embed: workspace:*
+      markdown-it-prism: ^2.2.4
+      markdown-it-videojs: ^0.0.1
+      markdown-it-wikilink: workspace:*
+      markdown-it-wikilinks: ^1.2.0
+      modern-normalize: ^1.1.0
+      pinia: ^2.0.14
+      prismjs: ^1.28.0
+      stylus: ^0.58.1
+      typescript: ^4.7.4
+      vite: ^2.9.13
+      vite-plugin-md: 0.18.1
+      vue: ^3.2.37
+      vue-tsc: ^0.34.17
+      vue3-markdown-it: ^1.0.10
+    dependencies:
+      '@gardeners/markdown-it-wikilinks': 1.5.1
+      '@kwvanderlinde/markdown-it-wikilinks': 1.0.2
+      '@types/markdown-it': 12.2.3
+      eslint: 8.18.0
+      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.18.0
+      happy-dom: 5.3.2
+      markdown-it: 13.0.1
+      markdown-it-embed: link:packages/markdown-it-embed
+      markdown-it-prism: 2.2.4
+      markdown-it-videojs: 0.0.1
+      markdown-it-wikilink: link:packages/markdown-it-wikilink
+      markdown-it-wikilinks: 1.2.0
+      modern-normalize: 1.1.0
+      pinia: 2.0.14_j6bzmzd4ujpabbp5objtwxyjp4
+      prismjs: 1.28.0
+      stylus: 0.58.1
+      vite-plugin-md: 0.18.1_2tmmwgxweliz55r4uud2t4r4o4
+      vue: 3.2.37
+      vue3-markdown-it: 1.0.10_@types+markdown-it@12.2.3
+    devDependencies:
+      '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
+      typescript: 4.7.4
+      vite: 2.9.13_stylus@0.58.1
+      vue-tsc: 0.34.17_typescript@4.7.4
 
-devDependencies:
-  '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
-  typescript: 4.7.4
-  vite: 2.9.13_stylus@0.58.1
-  vue-tsc: 0.34.17_typescript@4.7.4
+  packages/markdown-it-embed:
+    specifiers:
+      happy-dom: ^5.3.1
+      markdown-it: ^13.0.1
+      prismjs: ^1.28.0
+      typescript: ^4.7.4
+      vite: ^2.9.13
+      vite-plugin-md: 0.18.1
+      vue: ^3.2.37
+    dependencies:
+      happy-dom: 5.3.2
+      markdown-it: 13.0.1
+      prismjs: 1.28.0
+      typescript: 4.7.4
+      vite: 2.9.13
+      vite-plugin-md: 0.18.1_2tmmwgxweliz55r4uud2t4r4o4
+      vue: 3.2.37
+
+  packages/markdown-it-wikilink:
+    specifiers:
+      happy-dom: ^5.3.1
+      markdown-it: ^13.0.1
+      prismjs: ^1.28.0
+      typescript: ^4.7.4
+      vite: ^2.9.13
+      vite-plugin-md: 0.18.1
+      vue: ^3.2.37
+    dependencies:
+      happy-dom: 5.3.2
+      markdown-it: 13.0.1
+      prismjs: 1.28.0
+      typescript: 4.7.4
+      vite: 2.9.13
+      vite-plugin-md: 0.18.1_2tmmwgxweliz55r4uud2t4r4o4
+      vue: 3.2.37
 
 packages:
 
@@ -155,13 +198,13 @@ packages:
   /@types/concat-stream/1.6.1:
     resolution: {integrity: sha512-eHE4cQPoj6ngxBZMvVf6Hw7Mh4jMW4U9lpGmS5GBPB9RYxlFg+CHaVN7ErNY4W9XfLIEn20b4VDYaIrbq0q4uA==}
     dependencies:
-      '@types/node': 8.10.66
+      '@types/node': 10.17.60
     dev: false
 
   /@types/form-data/0.0.33:
     resolution: {integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==}
     dependencies:
-      '@types/node': 8.10.66
+      '@types/node': 10.17.60
     dev: false
 
   /@types/linkify-it/3.0.2:
@@ -202,7 +245,7 @@ packages:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.13_stylus@0.58.1
+      vite: 2.9.13
       vue: 3.2.37
 
   /@volar/code-gen/0.34.17:
@@ -1284,6 +1327,13 @@ packages:
     resolution: {integrity: sha512-HyxjAu6BRsdt6Xcv6TKVQnkz/E70TdGXEFHRYBGLncRE9lBFwDNLVtFojKxjJWgJ+5XxUwLaHXy+2sGBbDn+4A==}
     dev: false
 
+  /markdown-it-prism/2.2.4:
+    resolution: {integrity: sha512-7oQVppKjiZqVQo7s7eLTIs3o/0hdvqAWDW8lvRel6eUCGD4iXjKbSZjvdHZFA2ZnCkQUF47kbvtWZDVQrv7zyQ==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      prismjs: 1.28.0
+    dev: false
+
   /markdown-it-regexp/0.4.0:
     resolution: {integrity: sha512-0XQmr46K/rMKnI93Y3CLXsHj4jIioRETTAiVnJnjrZCEkGaDOmUxTbZj/aZ17G5NlRcVpWBYjqpwSlQ9lj+Kxw==}
     dev: false
@@ -1863,11 +1913,34 @@ packages:
       prismjs: 1.28.0
       source-map-js: 1.0.2
       ts-morph: 15.1.0
-      vite: 2.9.13_stylus@0.58.1
+      vite: 2.9.13
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
     dev: false
+
+  /vite/2.9.13:
+    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+    engines: {node: '>=12.2.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+    dependencies:
+      esbuild: 0.14.47
+      postcss: 8.4.14
+      resolve: 1.22.1
+      rollup: 2.75.7
+    optionalDependencies:
+      fsevents: 2.3.2
 
   /vite/2.9.13_stylus@0.58.1:
     resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
@@ -1892,6 +1965,7 @@ packages:
       stylus: 0.58.1
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
 
   /vue-demi/0.13.1_vue@3.2.37:
     resolution: {integrity: sha512-xmkJ56koG3ptpLnpgmIzk9/4nFf4CqduSJbUM0OdPoU87NwRuZ6x49OLhjSa/fC15fV+5CbEnrxU4oyE022svg==}

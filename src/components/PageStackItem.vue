@@ -20,11 +20,12 @@ provide("stackIndex", props.stackIndex)
 <style lang="stylus" module>
 .container
   flex-shrink: 0;
-  width: 625px;
-  max-width: 625px;
+  width: 100%;
+  max-width: 500px;
   position: sticky;
   flex-grow: 1;
   overflow-y: auto;
+  overflow-x hidden
   border-left: 1px solid rgba(0,0,0,0.05);
   transition: box-shadow 100ms linear,opacity 75ms linear,transform 200ms
   background #ffffff

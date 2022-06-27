@@ -1,6 +1,6 @@
 Về mặt layer, một function nên có cấu trúc như sau:
 
-![](Assets/Pasted%20image%2020220613095217.png)
+![](Source/Assets/Pasted%20image%2020220613095217.png)
 Mục đích của cấu trúc này là để dễ tách các code business ra khỏi code xử lý hạ tần.
 
 ## Layer IO

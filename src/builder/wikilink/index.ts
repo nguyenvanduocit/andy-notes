@@ -1,9 +1,10 @@
 import Token from "markdown-it/lib/token";
 import MarkdownIt from "markdown-it";
+import {createBuilder, PipelineStage} from "vite-plugin-md";
 
 const embedRE = /\[\[([^\]]+)]]/s
 
-export default (md: MarkdownIt, options: any) => {
+export const markdownItWikilink = (md: MarkdownIt, options: any) => {
   md.renderer.rules.wiki_link = function tokenizeBlock(tokens: Token[], idx: number) {
     if (!tokens[idx].info) return ''
     return "<" + tokens[idx].tag + " page-id='" + tokens[idx].info + "'>" + tokens[idx].content + "</" + tokens[idx].tag + ">"
@@ -45,13 +46,24 @@ export default (md: MarkdownIt, options: any) => {
         if (!token.info.startsWith('/')) {
           token.info = '/' + token.info
         }
-
-        if (!token.info.endsWith('.md')) {
-          token.info += '.md'
-        }
       }
 
       return true
     }
   )
 }
+
+
+export interface CodeOptions {
+}
+
+export const wikiLink = createBuilder('link', PipelineStage.parser)
+  .options<Partial<CodeOptions>>()
+  .initializer()
+  .handler(async (payload, options) => {
+    payload.parser.use(markdownItWikilink)
+    return payload
+  })
+  .meta({
+    description: 'you are NOT going to believe what you can with this builder!'
+  })

@@ -6,3 +6,8 @@
 2. [[Evergreen/Cài đặt FRP hỗ trợ SSL]]
 3. [[Evergreen/Những cách để implement micfrontend]]
 4. [[Evergreen/Tại sao TrueProfit]]
+5. [[Evergreen/Một số công cụ để cải thiện chất lượng code]]
+
+## Kiến trúc
+
+1. [[Evergreen/Serverless - FaaS principle]]

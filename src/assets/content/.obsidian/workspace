@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "b1c18d79426d29e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f59a84123fd2c9d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "index.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "43639416c362a6e6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Source/Cài đặt custom domain cho go mod sử dụng nginx.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c460a6f19f96e8be",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c331095979fbcd3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcc46669ee746798",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8da8ab8f1dca723a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3f9fcda0a6c53f83",
+    "type": "split",
+    "children": [
+      {
+        "id": "56a1e58e7b12887d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69fb89995909e2b0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Source/Cài đặt custom domain cho go mod sử dụng nginx.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "43639416c362a6e6",
+  "lastOpenFiles": [
+    "Source/Cài đặt custom domain cho go mod sử dụng nginx.md",
+    "Evergreen/Custom domain cho go mod giúp migrate code đơn giản hơn.md",
+    "Source/Cấu trúc một function.md",
+    "Evergreen/Serverless - FaaS principle.md",
+    "index.md",
+    "Evergreen/Những cách để implement micfrontend.md",
+    "Evergreen/Tại sao TrueProfit.md",
+    "Evergreen/Cài đặt FRP hỗ trợ SSL.md",
+    "Evergreen/Một số công cụ để cải thiện chất lượng code.md",
+    "Source/Microfrontend là gì.md"
+  ]
+}

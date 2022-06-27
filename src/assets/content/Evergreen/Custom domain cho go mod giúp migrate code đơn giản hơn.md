@@ -32,9 +32,9 @@ Do đó ta chỉ cần làm sao cho server trả về content như vậy là đ�
 
 Ban đầu mình sử dụng nginx [^2] sau đó đổi qua lambda[^3] .
 
-![[Cài đặt custom domain cho go mod sử dụng nginx]]
+![[Source/Cài đặt custom domain cho go mod sử dụng nginx]]
 
-![[Cài đặt custom domain cho go mod bằng aws lambda]]
+![[Source/Cài đặt custom domain cho go mod bằng aws lambda]]
 
 # Sử dụng
 
@@ -42,8 +42,8 @@ Ban đầu mình sử dụng nginx [^2] sau đó đổi qua lambda[^3] .
 
 Nếu bạn server trả về private repo, thì bạn cần phải setup biết môi trường `GOPRIVATE` và chỉ định git sử dụng `ssl` thay vì `http`:
 
-![[Go mod import private repo]]
+![[Source/Go mod import private repo]]
 
-[^1]: [[Tại sao TrueProfit?]]
-[^2]: [[Cài đặt custom domain cho go mod sử dụng nginx]]
-[^3]: [[Cài đặt custom domain cho go mod bằng aws lambda]]
+[^1]: [[Evergreen/Tại sao TrueProfit]]
+[^2]: [[Source/Cài đặt custom domain cho go mod sử dụng nginx]]
+[^3]: [[Source/Cài đặt custom domain cho go mod bằng aws lambda]]

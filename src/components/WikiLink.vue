@@ -11,6 +11,7 @@ const pageStack = useStackStore();
 
 const props = defineProps({
   pageId: {
+    type: String,
     required: true
   }
 })

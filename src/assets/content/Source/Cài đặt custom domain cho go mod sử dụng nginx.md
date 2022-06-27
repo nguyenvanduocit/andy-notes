@@ -20,4 +20,4 @@ server {
 }
 ```
 
-Cài đặt SSL:  [[Cài ssl cho nginx]]
+Cài đặt SSL:  [[Source/Cài ssl cho nginx]]

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "firebase deploy --only hosting --token $FIREBASE_TOKEN"
   },
   "dependencies": {
     "@gardeners/markdown-it-wikilinks": "^1.5.1",
@@ -15,6 +16,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "happy-dom": "^5.3.1",
     "markdown-it": "^13.0.1",
+    "markdown-it-prism": "^2.2.4",
     "markdown-it-videojs": "^0.0.1",
     "markdown-it-wikilinks": "^1.2.0",
     "modern-normalize": "^1.1.0",
